@@ -1,0 +1,40 @@
+box-sizing: border box para que a margem e o padding sejam contados como compositores da width e height
+
+eu copiei o background errado, era so uma img em branco entao o tempo todo eu estava achando q tinha algo errado com o meu codigo quando na vdd era algo errado com o bagckground
+
+esqueci como alinhar o background, tive que conferir é top center mas ainda ta mto pequeno eu acho? n, parece estar certo, é pq ta tudo mto grande
+
+eu deixei o header invisivel pra eu fzer depois
+
+eu mudei as fontes.
+
+alinhas o conteudo, utilizei algo que aprendi na anotação anterior, tudo ta no main portanto é bem util por o main pra alinhar tudo ao max width que vc qr, e pelo video anterior eu aprendi a por 90% mas n sei como ele chegou ao valor
+
+sabe uma coisa legal no começo pra visualizar é por no main *{} border red size 1 pra vc ver tudo q o main tem. o asterisco aplica a todos, se vc aplicar so no main {} vai aplicar realmente só ao main e nao a tudo que está dentro dele
+
+
+ok eu ajeitei as divs, achei q era margin top pra separa-las mas esqueci que na vdd é gap q vai no q contem as divs, ou seja, o main
+
+vamos agora pro gradient da borda, o gradiente precisa copiar de la pra vir os valores certinhos, agora como faz pra aparecer?
+ acho q round e pondo mais pra cima, eu tentei com margin mas na vdd é padding. meio obvio pq, n sei ql foi minha duvida ai.
+
+ ok pus o wrap na lista e pus as bordinhas da img das duas divs.
+
+
+e por ultimo o header
+
+vamos pro header, vou tirar de display none
+
+ok finalizei o header, o basico, um header, uma div q vai ser o container, dentro de outra div que vai conter a img e vai ter o background como borda, aplica padding e tadaaa.
+
+aplicada as transformações no hover.
+
+fazer as animações agora
+@keyframes nomedaanimacao{
+    from{}
+
+    top{}
+}
+backwards faz a animação ao inves d esperar a proxima ja executar, vc poe ela no elemento que vai ser animado junto com a chamada da animação atraves do animation: nomedaanimacao segs delaysegs backwards 
+hmm pelo visto da pra por a animation no hover
+
