@@ -7,9 +7,12 @@
 
 header{
     margin:auto;
-    width:calc(0.93*520px);
+    max-width: 520px;
+    width:93%;
     margin-top:32px;
     margin-bottom: 32px;
+    align-content: center;
+    overflow:hidden;
   
 
 }
@@ -22,6 +25,7 @@ header div#div-header-container{
     display:flex;
     align-items: center;
     transition: transform 1s;
+    
 }
 header div#div-borda{
     display:flex;
@@ -46,7 +50,7 @@ header img{
     background-color: #121214;
 }
 header div#div-header-container:hover{
-    transform: translateX(39%);
+    transform: translateX(38%);
 }
 body {
     background-image: url("./assets/estrelas.jpg");
