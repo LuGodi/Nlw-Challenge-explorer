@@ -7,7 +7,7 @@
 
 header{
     margin:auto;
-    width:calc(0.9*520px);
+    width:calc(0.93*520px);
     margin-top:32px;
     margin-bottom: 32px;
   
@@ -16,7 +16,7 @@ header{
 /*header *{
     border: red 1px solid;
     
-}*/
+} */
 header div#div-header-container{
    
     display:flex;
