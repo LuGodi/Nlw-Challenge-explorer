@@ -24,4 +24,4 @@ After my poject built during Rocketseat's Next Level Week event they proposed a 
 - [x] :white_check_mark: Animations using CSS
 - [ ] Link to the other version
 - [ ] Open a panel with informations on the profile picture
-- [ ] Fix the hover
+- [x] ✅Fix the hover
