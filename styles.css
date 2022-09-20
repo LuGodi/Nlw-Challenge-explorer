@@ -24,7 +24,7 @@ header div#div-header-container{
    
     display:flex;
     align-items: center;
-    transition: transform 1s;
+    transition: transform 0.5s;
     
 }
 header div#div-borda{
@@ -33,17 +33,72 @@ header div#div-borda{
     background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
     border-radius: 50%;
     padding:4px;
+    position:relative;
     
 }
-header div#div-informacoes{
-    background-color: #C91842;
-    text-align: right;
-  
-}
-/*header div#div-informacoes:hover{
+
+/*header div#div-header-container:before{
+    content:"Switch to Games Version";
+    font-size: 15px;
+   
+    text-align: center;
+    background-color: #121214;
+    position:absolute;
+    max-width: 50%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left:1%;
+
+    border-radius: 8px;
+    font-family: 'Montserrat', monospace;
+    color:#fff;
+    border:solid 1px #c1c1c1;
+    border-right: 1px solid transparent;
+    animation: headerButton 0.3s;
     
-    display:block;
 }*/
+
+header div#div-informacoes{
+    opacity: 0;
+    content:"Switch to Games Version";
+    font-size: 15px;
+    align-self: center;
+    text-align: center;
+    font-weight: 900;
+    background-color: #121214;
+    position:absolute;
+    width:200%;
+    max-width: 170%;
+    max-height:25%;
+    padding-top: 3%;
+    padding-bottom: 20%;
+    margin-left:1%;
+    right:93%;
+    border-radius: 8px;
+    font-family: 'Montserrat', monospace;
+   
+    border:solid 4px #C91842;
+    border-right: 1px solid transparent;
+   animation: headerButton 0s backwards;
+}
+#div-borda:hover  #div-informacoes{
+    animation:openHeaderButton 0.3s backwards;
+    
+   /* transition: 3s;*/
+    opacity:1;
+   
+    
+   
+   
+}
+header a{
+    color:#fff;
+    text-decoration: none;
+}
+header a:hover{
+     cursor:pointer;
+    
+}
 header img{
     width:112px;
     border-radius: 50%;
@@ -51,7 +106,9 @@ header img{
 }
 header div#div-header-container:hover{
     transform: translateX(38%);
+   
 }
+
 body {
     background-image: url("./assets/estrelas.jpg");
     background-color: #121214;
@@ -172,5 +229,25 @@ header div{
     to{
         opacity:1;
         transform: translateY(0);
+    }
+}
+
+@keyframes headerButton{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity:(+1px);
+
+    }
+}
+
+@keyframes openHeaderButton{
+    from{
+        clip-path:inset(0 0 0 100%);
+    }
+    to{
+        clip-path: inset(0 0 0 0);
     }
 }
